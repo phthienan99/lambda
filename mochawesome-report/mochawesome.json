@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-03-11T12:45:14.858Z",
-    "end": "2024-03-11T12:45:25.567Z",
-    "duration": 10709,
+    "start": "2024-03-13T07:34:28.993Z",
+    "end": "2024-03-13T07:34:39.453Z",
+    "duration": 10460,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f041d59e-d601-412c-b418-c62fa4e6bde0",
+      "uuid": "15bfc075-d068-425f-ba94-c61e9c898ea2",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,9 +27,9 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "997fc458-7ed2-4c65-8af5-2fa134459d73",
+          "uuid": "21b00bec-fa12-4ce4-8a2e-cd6e0b5294f1",
           "title": "add Second todo tests",
-          "fullFile": "D:\\@MILK\\5. WORK\\GJW\\Auto\\Lambda\\seleniumDemo\\test\\secondTest.js",
+          "fullFile": "D:\\@MILK\\5. WORK\\GJW\\Git\\lambda\\test\\secondTest.js",
           "file": "\\test\\secondTest.js",
           "beforeHooks": [],
           "afterHooks": [],
@@ -38,7 +38,7 @@
               "title": "successfully add a todo to application",
               "fullTitle": "add Second todo tests successfully add a todo to application",
               "timedOut": null,
-              "duration": 5492,
+              "duration": 7439,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,7 +47,7 @@
               "context": null,
               "code": "//launch the browser\nlet driver =await new Builder().forBrowser(\"firefox\").build();\n\n//navigate to our application\nawait driver.get(\"https://lambdatest.github.io/sample-todo-app/\")\n//add a todo\nawait driver.findElement(By.id(\"sampletodotext\")).sendKeys(\"Sab learns Selenium\", Key.RETURN);\n//assert\nlet todoText = await driver.findElement(By.css(\"ul>li:last-child\")).getText().then(function(value){\n    return value\n});\n//assert using node assertion\nassert.strictEqual(todoText,\"Sab learns Selenium\");\n//assert using chai should\n//todoText.should.equal(\"Sab learn Selenium\");\n//close the browser\nawait driver.quit();",
               "err": {},
-              "uuid": "62680028-ba72-4916-a7e2-dcbce294f74d",
+              "uuid": "fac3c9b5-0df9-4983-86bd-6d8ff55f929d",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -55,20 +55,20 @@
           ],
           "suites": [],
           "passes": [
-            "62680028-ba72-4916-a7e2-dcbce294f74d"
+            "fac3c9b5-0df9-4983-86bd-6d8ff55f929d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5492,
+          "duration": 7439,
           "root": false,
           "rootEmpty": false,
           "_timeout": null
         },
         {
-          "uuid": "4b8d575a-3d9f-4a14-b905-bdecb2de1a6b",
+          "uuid": "017e2e11-1127-488e-b301-21bee77ce874",
           "title": "add todo tests",
-          "fullFile": "D:\\@MILK\\5. WORK\\GJW\\Auto\\Lambda\\seleniumDemo\\test\\firstTest.js",
+          "fullFile": "D:\\@MILK\\5. WORK\\GJW\\Git\\lambda\\test\\firstTest.js",
           "file": "\\test\\firstTest.js",
           "beforeHooks": [
             {
@@ -84,7 +84,7 @@
               "context": null,
               "code": "//ltCapabilities.capabilities.name = this.currentTest.title;\ndriver = new Builder()\n.usingServer(gridUrl)\n.withCapabilities(ltCapabilities.capabilities)\n.build();",
               "err": {},
-              "uuid": "4598bbd9-11d2-4796-8713-30997a95fd0b",
+              "uuid": "10415a01-375b-41f5-872b-e2ab7084cb02",
               "parentUUID": null,
               "isHook": true,
               "skipped": false
@@ -95,7 +95,7 @@
               "title": "\"after each\" hook in \"add todo tests\"",
               "fullTitle": "add todo tests \"after each\" hook in \"add todo tests\"",
               "timedOut": null,
-              "duration": 1107,
+              "duration": 870,
               "state": null,
               "speed": null,
               "pass": false,
@@ -104,7 +104,7 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "4ae7a170-7fd1-401e-a0c2-9a14b41cdb34",
+              "uuid": "b3f408f5-3c04-457f-912b-574e1e8acf7b",
               "parentUUID": null,
               "isHook": true,
               "skipped": false
@@ -115,7 +115,7 @@
               "title": "successfully add a todo to application",
               "fullTitle": "add todo tests successfully add a todo to application",
               "timedOut": null,
-              "duration": 8804,
+              "duration": 9052,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -124,7 +124,7 @@
               "context": null,
               "code": "//launch the browser\n//let driver =await new Builder().forBrowser(\"firefox\").build();\n\n//navigate to our application\nawait driver.get(\"https://lambdatest.github.io/sample-todo-app/\")\n//add a todo\nawait driver\n.findElement(By.id(\"sampletodotext\"))\n.sendKeys(\"Sab learns Selenium\", Key.RETURN);\n//assert\nlet todoText = await driver\n.findElement(By.css(\"ul>li:last-child\"))\n.getText()\n.then(function(value){\n    return value;\n});\n//assert using node assertion\nassert.strictEqual(todoText,\"Sab learns Selenium\");\n//assert using chai should\n//todoText.should.equal(\"Sab learn Selenium\");\n//close the browser\n//await driver.quit();",
               "err": {},
-              "uuid": "75de99e6-23c6-499b-9927-4f2533650982",
+              "uuid": "92448aea-e695-4ecb-9072-cce86c0db383",
               "parentUUID": null,
               "isHook": false,
               "skipped": false
@@ -132,12 +132,12 @@
           ],
           "suites": [],
           "passes": [
-            "75de99e6-23c6-499b-9927-4f2533650982"
+            "92448aea-e695-4ecb-9072-cce86c0db383"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8804,
+          "duration": 9052,
           "root": false,
           "rootEmpty": false,
           "_timeout": null

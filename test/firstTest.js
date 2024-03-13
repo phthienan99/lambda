@@ -7,7 +7,7 @@ const assert = require ("assert");
 describe("add todo tests", function() {
     var driver;
 
-    //username
+    //user
     const USERNAME = ltCapabilities.capabilities.user;
 
     //key
